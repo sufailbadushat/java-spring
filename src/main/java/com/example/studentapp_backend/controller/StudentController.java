@@ -9,8 +9,12 @@ import org.springframework.web.bind.annotation.RestController;
 public class StudentController {
 
     @GetMapping("/")
-
     public String HomePage(){
         return "Welcome to my Website!";
+    }
+
+    @GetMapping("contact")
+    public String ContactPage(){
+        return "Welcome to my Contact page!";
     }
 }
